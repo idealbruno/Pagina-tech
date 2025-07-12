@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: #fff;
+    color: #0a0b0b;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+}
+
+a{
+text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.botao{
+    background-color: rgb(5, 31, 40);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+    display: inline-block;
+
+}
+.header {
+    background-color:white;
+    box-shadow: 0 2px 5px rgb(0, 0, 0,0.1);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(189, 97%, 25%);
+}
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.menu a{
+    color: #333;
+    font-weight: bold;
+}
+
+section{
+    padding: 40px 0;
+}
+
+.destaque {
+    padding-top: 90px;
+    background-color: rgb(109, 171, 194);
+    display: flex;
+}
+
+.destaque .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.texto h1 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+    color: black;
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(3, 67, 157, 0.693);
+}
+.recursos .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    padding: 20px;
+    text-align: center;
+}
+.icone{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.cta {
+    background-color:rgb(109, 171, 194);
+    color: rgb(13, 14, 14);
+    text-align: center;
+}
+.cta .botao{
+    background-color:rgb(9, 7, 7)
+    color rgb(109, 171, 194);
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 8px 0;
+    color: #fff;
+}
+
+.botao-menu{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .destaque .container {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .recursos .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta{
+        padding: 20px;
+    }
+
+    .botao-menu {
+        display: block;
+}
+
+.menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    max-height: 0;
+    
+}
+
+.menu.ativo{
+    max-height: 200px;
+    padding: 14px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+
+        
+    }
+}

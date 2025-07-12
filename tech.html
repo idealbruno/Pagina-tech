@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tech</title>
+</head>
+<body>
+    <header class="header">
+
+        <nav class="container navegacao">
+            <div class="logo">
+                tech
+            </div>
+
+            <button class="botao-menu">☰</button>
+
+                <ul class="menu ativo">
+                    <li>
+                        <a href="#destaque">Início</a>
+                    </li>
+                    <li>
+                        <a href="#recursos">Recursos</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="destaque" id="destaque">
+
+        <div class="container">
+            <div class="texto">
+                <h1>Tecnologia</h1>
+                <p>Tecnologia é o conjunto de conhecimentos, habilidades, técnicas e ferramentas que a humanidade desenvolve para resolver problemas e melhorar a sua vida. Ela engloba desde as ferramentas mais simples, como a roda, até as tecnologias mais complexas, como a inteligência artificial.
+                </p>
+                <a href="#" class="botao">Explorar</a>
+            </div>
+
+            <div class="imagem">
+                <img src="./img/tech1.jpg" alt="logo">
+            </div>
+        </div>
+    </section>
+
+    <section class="recursos" id="recursos">
+        <h2>Nosso Diferencias</h2>
+
+        <div class="container">
+            
+        <div class="card">
+            <div class="icone">💻</div>
+            <h3>Tecnologia</h3>
+            <p>A tecnologia é um diferencial competitivo que pode fazer sua empresa se destacar no mercado e conquistar mais clientes.Mas para isso é preciso escolher as ferramentas certas para o seu negócio
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icone">⚡</div>
+            <h3>Eficiência</h3>
+            <p>capacidade de realizar tarefas e processos com o mínimo de desperdício de recursos, tempo e esforço
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icone">🌐</div>
+            <h3>Programa de tecnologia</h3>
+            <p>Software é todo programa ou conjunto de instruções digitais que orienta o funcionamento de dispositivos eletrônicos
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <section class="cta">
+        <h2>Pronto para fazera diferença ?</h2>
+        <p>Junte-se a quem escolheu tecnologia</p>
+        <a href="#" class="botao">Comprar agora</a>
+
+    </section>
+
+    <footer>
+        Direitos Reservador Tech 2025
+    </footer>
+</body>
+
+<script>
+   let botao = document.querySelector(".botao-menu")
+   let menu = document.querySelector(".menu")
+
+   botao.addEventListener("click", () => {
+    menu.classList.toggle("ativo")
+   })
+
+</script>
+</html>
